@@ -1,8 +1,8 @@
 name: "Scrapbox Notify"
 description: "Notify Scrapbox project updates to Slack and Discord."
 inputs:
-  project_name:
-    description: Name of the target ScrapBox Project
+  feed_url:
+    description: Feed URL (e.g. https://scrapbox.io/api/feed/${projectName})
     required: true
   slack_webhook:
     description: Slack Incoming Webhook

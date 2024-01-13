@@ -5,16 +5,16 @@ import { getFromUrl, parseFeed } from "./feed.ts";
 import { convertToSlackPayload, postToSlack } from "./slack.ts";
 import { readLineAndExecute } from "./util.ts";
 
-const projectName = process.env.INPUT_PROJECT_NAME;
-if (!projectName) {
-  console.error("PROJECT_NAME is empty");
+const feedUrl = process.env.INPUT_FEED_URL;
+if (!feedUrl) {
+  console.error("FEED_URL is empty");
   process.exit(1);
 }
 
 const debug = !!process.env.DEBUG;
 const feed = debug
   ? await fs.readFile("./src/feed.test.xml").then((v) => v.toString())
-  : await getFromUrl(`https://scrapbox.io/api/feed/${projectName}`);
+  : await getFromUrl(feedUrl);
 const contents = debug
   ? await parseFeed(feed, new Date("2022-02-22T22:22:22Z"))
   : await parseFeed(feed);

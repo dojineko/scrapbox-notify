@@ -15,15 +15,15 @@ jobs:
     steps:
       - uses: dojineko/scrapbox-notify@main
         with:
-          project_name: ${{ secrets.PROJECT_NAME }}
+          feed_url: ${{ secrets.FEED_URL }}
           slack_webhook: ${{ secrets.SLACK_WEBHOOK }}
           discord_webhook: ${{ secrets.DISCORD_WEBHOOK }}
 ```
 
 ## Variables
 
-| Variables       | Required | Purpose                                                  |
-| --------------- | :------: | -------------------------------------------------------- |
-| project_name    |    ✅    | Project name (e.g. `https://scrapbox.io/{project_name}`) |
-| slack_webhook   |          | Slack Incoming Webhook                                   |
-| discord_webhook |          | Discord Incoming Webhook                                 |
+| Variables       | Required | Purpose                                                       |
+| --------------- | :------: | ------------------------------------------------------------- |
+| feed_url        |    ✅    | Feed URL (e.g. `https://scrapbox.io/api/feed/${projectName}`) |
+| slack_webhook   |          | Slack Incoming Webhook                                        |
+| discord_webhook |          | Discord Incoming Webhook                                      |
