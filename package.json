@@ -1,0 +1,29 @@
+{
+  "name": "scrapbox-notify",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "vite-node ./src/main.ts",
+    "test": "npm run test:tsc && npm run test:biome && npm run test:vitest",
+    "test:tsc": "tsc --noEmit",
+    "test:biome": "biome ci .",
+    "test:vitest": "vitest run",
+    "fmt": "npm run fmt:biome && npm run fmt:prettier",
+    "fmt:biome": "biome check --apply-unsafe .",
+    "fmt:prettier": "prettier --write ."
+  },
+  "dependencies": {
+    "@biomejs/biome": "1.5.1",
+    "@types/lodash-es": "4.17.12",
+    "@types/node": "20.11.0",
+    "dayjs": "1.11.10",
+    "lodash-es": "4.17.21",
+    "prettier": "3.2.1",
+    "rss-parser": "3.13.0",
+    "typescript": "5.3.3",
+    "vite": "5.0.11",
+    "vite-node": "1.2.0",
+    "vitest": "1.2.0"
+  }
+}

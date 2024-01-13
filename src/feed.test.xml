@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Scrapbox Help - Scrapbox</title>
+        <link>https://scrapbox.io/help</link>
+        <description>Scrapbox Help</description>
+        <lastBuildDate>2022-02-22T22:22:22Z</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <item>
+            <title>Scrapbox Help - Scrapbox</title>
+            <link>https://scrapbox.io/help/%E6%97%A5%E6%9C%AC%E8%AA%9E</link>
+            <guid>https://scrapbox.io/help/%E6%97%A5%E6%9C%AC%E8%AA%9E</guid>
+            <pubDate>2022-02-22T22:22:22Z</pubDate>
+            <description><![CDATA[this is example]]></description>
+        </item>
+    </channel>
+</rss>

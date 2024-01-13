@@ -1,0 +1,15 @@
+name: "Scrapbox Notify"
+description: "Notify Scrapbox project updates to Slack and Discord."
+inputs:
+  project_name:
+    description: Name of the target ScrapBox Project
+    required: true
+  slack_webhook:
+    description: Slack Incoming Webhook
+    required: false
+  discord_webhook:
+    description: Discord Incoming Webhook
+    required: false
+runs:
+  using: "docker"
+  image: "Dockerfile"
